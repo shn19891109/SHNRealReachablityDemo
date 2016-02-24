@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  
+//
+//  Created by 苏浩楠 on 16/2/24.
+//
+//
+
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0] //颜色16进制
+#define kImageNamed(A) [UIImage imageNamed:A]//定义缓存UIImage对象
+
+
+#define kScreenHeight  ([[UIScreen mainScreen] bounds].size.height)
+#define kScreenWidth ([[UIScreen mainScreen] bounds].size.width)
